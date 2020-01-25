@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Shop | Početna </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<!-- Top Bar -->
+<div id="topBar" class="top-bar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="wrap d-flex justify-content-center justify-content-sm-start">
+                    <p class="sub-txt"><span class="fa-icons"><i class="fas fa-gift"></i></span> Dobro došli na GiftShop!</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-8">
+                <div class="wrap d-flex justify-content-sm-end justify-content-center">
+                    <p class="sub-txt  padd-l-16"><a href="pages/wishlist.html"><span class="fa-icons"><i class="far fa-heart"></i></span><span class="hide-sm-xs">Lista želja</span></a></p>
+                    <p class="sub-txt  padd-l-16"><a href="pages/my_account.html"><span class="fa-icons"><i class="far fa-user"></i></span><span class="hide-sm-xs">Moj nalog</span> </a></p>
+                    <p class="sub-txt  padd-l-16"><a href="pages/cart.html"><span class="fa-icons"><i class="fab fa-opencart"></i></span><span class="hide-sm-xs"> Moja korpa </span></a></p>
+                    <p class="sub-txt  padd-l-16"><a href="#search"><span class="fa-icons"><i class="fas fa-search"></i></span><span class="hide-sm-xs">Pretraga </span></a></p>
+                    <p class="sub-txt  padd-l-16">
+                        <a href="#"><span class="fa-icons padd-l-8"><i class="fab fa-facebook-f"></i></span></a>
+                        <a href="#"><span class="fa-icons padd-l-8"><i class="fab fa-twitter"></i></span></a>
+                        <a href="#"><span class="fa-icons padd-l-8"><i class="fab fa-instagram"></i></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Search Form - Show on click -->
+<div id="search">
+    <button type="button" class="js-close">×</button>
+    <form action="" method="">
+        <input type="search" name="search" value="" placeholder="Uneti pojam za pretragu..." />
+        <button type="submit" name="action" class="btn btn-search">Pretraži</button>
+    </form>
+</div>
+<!-- Header -->
+<div id="header" class="header js-scroll-header">
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg padd-r-0 padd-l-0">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="uploads/logo.png" height="64" width="200" alt="logo"/></a>
+                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto d-flex justify-content-md-end">
+                                <li class="nav-item padd-l-20 active"><a class="nav-link" href="index.html">Početna <span class="sr-only">(current)</span></a></li>
+                                <li class="nav-item padd-l-20 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Pokloni
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="pages/category.html">Poklon set</a>
+                                        <a class="dropdown-item" href="#">Vina</a>
+                                        <a class="dropdown-item" href="#">Parfemi</a>
+                                        <a class="dropdown-item" href="#">Knjige</a>
+                                        <a class="dropdown-item" href="#">Cveće</a>
+                                        <a class="dropdown-item" href="#">Satovi</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item padd-l-20"><a class="nav-link" href="pages/latest.html">Novo</a></li>
+                                <li class="nav-item padd-l-20"><a class="nav-link" href="pages/discount.html">Akcija</a></li>
+                                <li class="nav-item padd-l-20"><a class="nav-link" href="pages/blog.html">Blog</a></li>
+                                <li class="nav-item padd-l-20"><a class="nav-link" href="pages/about.html">O nama</a></li>
+                                <li class="nav-item padd-l-20"><a class="nav-link" href="pages/contact.html">Kontakt</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<!-- Main Content -->
+<!-- Section - Intro -->
+<section class="section-wrap mg-t-0">
+    <div class="container-fluid">
+        <div class="row padd-l-0 padd-r-0">
+            <div class="col-12 padd-l-0 padd-r-0">
+                <!-- slider -->
+                <div id="giftCarousel" class="carousel slide padd-l-0 padd-r-0" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="uploads/carousel/teasergift.jpg" alt="gift">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="uploads/carousel/teasergift2.jpg" alt="gift">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#giftCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#giftCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section - Nav Tabs // new and discount products selection -->
+<section class="section-wrap">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="wrap">
+                    <section id="tabs">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active text-left padd-l-0 padd-r-0" id="nav-new-tab" data-toggle="tab" href="#nav-new" role="tab" aria-controls="nav-new" aria-selected="true">Novo u ponudi <span class="fa-icons"><i class="fas fa-plus"></i></span> </a>
+                                <a class="nav-item nav-link text-left padd-r-0 padd-l-0" id="nav-discount-tab" data-toggle="tab" href="#nav-discount" role="tab" aria-controls="nav-discount" aria-selected="false">Proizvodi na akciji <span class="fa-icons"><i class="fas fa-plus"></i></span> </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                            <!-- New Products Preview -->
+                            <div class="tab-pane fade show active" id="nav-new" role="tabpanel" aria-labelledby="nav-new-tab">
+                                <div class="row">
+                                    <!-- Product Card -->
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card ribbon ribbon-new">
+                                            <div class="product-full-img d-flex justify-content-center align-items-center flex-column">
+                                                <img src="uploads/products/1.jpg" alt="gift" class="img-fluid"/>
+                                            </div>
+                                            <div class="padd-tb-8"><span class="c-name sub-txt text-uppercase"><a href="pages/category.html">Poklon set</set></a></span></div>
+                                            <div class="padd-tb-8"><p><a href="pages/single_product.html">Poklon set 1</a></p></div>
+                                            <div class="padd-tb-8"><span class="c-name">1000.00 RSD</span></div>
+                                            <div class="btn-group d-flex justify-content-start align-items-start">
+                                                <button type="button" class="btn custom-btn"><span class="fa-icons"><i class="fas fa-shopping-cart"></i></span><a href="#">Dodaj u korpu </a></button>
+                                            </div>
+                                            <div class="padd-tb-8"><p class="sub-txt product-description padd-t-b-8">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p></div>
+                                            <span class="ribbon-new-span text-uppercase">Novo</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card ribbon ribbon-new">
+                                            <div class="product-full-img d-flex justify-content-center align-items-center flex-column">
+                                                <img src="uploads/products/2.jpg" alt="gift" class="img-fluid"/>
+                                            </div>
+                                            <div class="padd-tb-8"><span class="c-name sub-txt text-uppercase"><a href="pages/category.html">Poklon set</a></span></div>
+                                            <div class="padd-tb-8"><p><a href="pages/single_product.html">Poklon set 2</a></p></div>
+                                            <div class="padd-tb-8"><span class="c-name">1000.00 RSD</span></div>
+                                            <div class="btn-group d-flex justify-content-start align-items-start">
+                                                <button type="button" class="btn custom-btn"><span class="fa-icons"><i class="fas fa-shopping-cart"></i></span><a href="#">Dodaj u korpu </a></button>
+                                            </div>
+                                            <div class="padd-tb-8"><p class="sub-txt product-description padd-t-b-8">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p></div>
+                                            <span class="ribbon-new-span text-uppercase">Novo</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card ribbon ribbon-new">
+                                            <div class="product-full-img d-flex justify-content-center align-items-center flex-column">
+                                                <img src="uploads/products/3.png" alt="gift" class="img-fluid"/>
+                                            </div>
+                                            <div class="padd-tb-8"><span class="c-name sub-txt text-uppercase"><a href="pages/category.html">Poklon set</a></span></div>
+                                            <div class="padd-tb-8"><p><a href="pages/single_product.html">Poklon set 3</a></p></div>
+                                            <div class="padd-tb-8"><span class="c-name">1000.00 RSD</span></div>
+                                            <div class="btn-group d-flex justify-content-start align-items-start">
+                                                <button type="button" class="btn custom-btn"><span class="fa-icons"><i class="fas fa-shopping-cart"></i></span><a href="#">Dodaj u korpu </a></button>
+                                            </div>
+                                            <div class="padd-tb-8"><p class="sub-txt product-description padd-t-b-8">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p></div>
+                                            <span class="ribbon-new-span text-uppercase">Novo</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card ribbon ribbon-new">
+                                            <div class="product-full-img d-flex justify-content-center align-items-center flex-column">
+                                                <img src="uploads/products/4.jpg" alt="gift" class="img-fluid"/>
+                                            </div>
+                                            <div class="padd-tb-8"><span class="c-name sub-txt text-uppercase"><a href="pages/category.html">Poklon set</a></span></div>
+                                            <div class="padd-tb-8"><p><a href="pages/single_product.html">Poklon set 4</a></p></div>
+                                            <div class="padd-tb-8"><span class="c-name">1000.00 RSD</span></div>
+                                            <div class="btn-group d-flex justify-content-start align-items-start">
+                                                <button type="button" class="btn custom-btn"><span class="fa-icons"><i class="fas fa-shopping-cart"></i></span><a href="#">Dodaj u korpu </a></button>
+                                            </div>
+                                            <div class="padd-tb-8"><p class="sub-txt product-description padd-t-b-8">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p></div>
+                                            <span class="ribbon-new-span text-uppercase">Novo</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Discount Products Preview -->
+                            <div class="tab-pane fade" id="nav-discount" role="tabpanel" aria-labelledby="nav-discount-tab">
+                                <div class="row">
+                                    <!-- Product Card -->
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card ribbon ribbon-discount">
+                                            <div class="product-full-img d-flex justify-content-center align-items-center flex-column">
+                                                <img src="uploads/products/5.jpg" alt="gift" class="img-fluid"/>
+                                            </div>
+                                            <div class="padd-tb-8"><span class="c-name sub-txt text-uppercase"><a href="pages/category.html">Poklon set</a></span></div>
+                                            <div class="padd-tb-8"><p><a href="pages/single_product.html">Poklon set 5</a></p></div>
+                                            <div class="padd-tb-8"><span class="c-name">1000.00 RSD</span><span class="r-name">2200.00 RSD</span></div>
+                                            <div class="btn-group d-flex justify-content-start align-items-start">
+                                                <button type="button" class="btn custom-btn"><span class="fa-icons"><i class="fas fa-shopping-cart"></i></span><a href="#">Dodaj u korpu </a></button>
+                                            </div>
+                                            <div class="padd-tb-8"><p class="sub-txt product-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p></div>
+                                            <span class="ribbon-new-span text-uppercase">Akcija</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card ribbon ribbon-discount">
+                                            <div class="product-full-img d-flex justify-content-center align-items-center flex-column">
+                                                <img src="uploads/products/6.jpeg" alt="gift" class="img-fluid"/>
+                                            </div>
+                                            <div class="padd-tb-8"><span class="c-name sub-txt text-uppercase"><a href="pages/category.html">Poklon set</a></span></div>
+                                            <div class="padd-tb-8"><p><a href="pages/single_product.html">Poklon set 6</a></p></div>
+                                            <div class="padd-tb-8"><span class="c-name">1000.00 RSD</span><span class="r-name">2200.00 RSD</span></div>
+                                            <div class="btn-group d-flex justify-content-start align-items-start">
+                                                <button type="button" class="btn custom-btn"><span class="fa-icons"><i class="fas fa-shopping-cart"></i></span><a href="#">Dodaj u korpu </a></button>
+                                            </div>
+                                            <div class="padd-tb-8"><p class="sub-txt product-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p></div>
+                                            <span class="ribbon-new-span text-uppercase">Akcija</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card ribbon ribbon-discount">
+                                            <div class="product-full-img d-flex justify-content-center align-items-center flex-column">
+                                                <img src="uploads/products/7.jpeg" alt="gift" class="img-fluid"/>
+                                            </div>
+                                            <div class="padd-tb-8"><span class="c-name sub-txt text-uppercase"><a href="pages/category.html">Poklon set</a></span></div>
+                                            <div class="padd-tb-8"><p><a href="pages/single_product.html">Poklon set 7</a></p></div>
+                                            <div class="padd-tb-8"><span class="c-name">1000.00 RSD</span><span class="r-name">2200.00 RSD</span></div>
+                                            <div class="btn-group d-flex justify-content-start align-items-start">
+                                                <button type="button" class="btn custom-btn"><span class="fa-icons"><i class="fas fa-shopping-cart"></i></span><a href="#">Dodaj u korpu </a></button>
+                                            </div>
+                                            <div class="padd-tb-8"><p class="sub-txt product-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p></div>
+                                            <span class="ribbon-new-span text-uppercase">Akcija</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="card ribbon ribbon-discount">
+                                            <div class="product-full-img d-flex justify-content-center align-items-center flex-column">
+                                                <img src="uploads/products/8.jpg" alt="gift" class="img-fluid"/>
+                                            </div>
+                                            <div class="padd-tb-8"><span class="c-name sub-txt text-uppercase"><a href="pages/category.html">Poklon set</a></span></div>
+                                            <div class="padd-tb-8"><p><a href="pages/single_product.html">Poklon set 8</a></p></div>
+                                            <div class="padd-tb-8"><span class="c-name">1000.00 RSD</span><span class="r-name">2200.00 RSD</span></div>
+                                            <div class="btn-group d-flex justify-content-start align-items-start">
+                                                <button type="button" class="btn custom-btn"><span class="fa-icons"><i class="fas fa-shopping-cart"></i></span><a href="#">Dodaj u korpu </a></button>
+                                            </div>
+                                            <div class="padd-tb-8"><p class="sub-txt product-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p></div>
+                                            <span class="ribbon-new-span text-uppercase">Akcija</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section - All categories -->
+<section class="section-wrap">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="wrap">
+                    <div class="heading">
+                        <h1 class="heading-main-border">Kategorije</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="wrap">
+                    <div>
+                        <div class="row">
+                            <div class="col-12 col-sm-4 col-md-2 col-lg-2">
+                                <div>
+                                    <a href="pages/category.html">
+                                        <div class="linked-div d-flex justify-content-center">
+                                            <div class="flex-column d-flex justify-content-center align-items-center"><h1 class="padd-t-b-16">Poklon set</h1></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-2 col-lg-2">
+                                <div>
+                                    <a href="pages/category.html">
+                                        <div class="linked-div d-flex justify-content-center">
+                                            <div class="flex-column d-flex justify-content-center align-items-center"><h1 class="padd-t-b-16">Vina</h1></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-2 col-lg-2">
+                                <div>
+                                    <a href="pages/category.html">
+                                        <div class="linked-div d-flex justify-content-center">
+                                            <div class="flex-column d-flex justify-content-center align-items-center"><h1 class="padd-t-b-16">Parfemi</h1></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-2 col-lg-2">
+                                <div>
+                                    <a href="pages/category.html">
+                                        <div class="linked-div d-flex justify-content-center">
+                                            <div class="flex-column d-flex justify-content-center align-items-center"><h1 class="padd-t-b-16">Knjige</h1></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-2 col-lg-2">
+                                <div>
+                                    <a href="pages/category.html">
+                                        <div class="linked-div d-flex justify-content-center">
+                                            <div class="flex-column d-flex justify-content-center align-items-center"><h1 class="padd-t-b-16">Cveće</h1></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-md-2 col-lg-2">
+                                <div>
+                                    <a href="pages/category.html">
+                                        <div class="linked-div d-flex justify-content-center">
+                                            <div class="flex-column d-flex justify-content-center align-items-center"><h1 class="padd-t-b-16">Satovi</h1></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section - gifts for him / gifts for her -->
+<section class="section-wrap">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="wrap">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6">
+                            <div class="forHerHim padd-tb-16">
+                                <span class="badge custom-badge">Top selekcija</span>
+                                <div class="heading">
+                                    <h1 class="heading-border-bottom">Za nju</h1>
+                                </div>
+                                <div class="row add-p-padd">
+                                    <div class="col-12 col-sm-12 col-md-5 padd-b-16">
+                                            <img src="uploads/forher.jpg" alt="for her" class="img-fluid"/>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-7">
+                                        <p class="sub-txt padd-b-16">Najbolji pokloni za nju</p>
+                                        <ul class="list-group forHerHimListGroup add-padd">
+                                            <a href="pages/category.html"><li class="list-group-item">Poklon set <span class="fa-icons"><i class="fas fa-plus"></i></span></li> </a>
+                                            <a href="#"><li class="list-group-item">Parfemi <span class="fa-icons"><i class="fas fa-plus"></i></span></li> </a>
+                                            <a href="#"><li class="list-group-item">Cveće <span class="fa-icons"><i class="fas fa-plus"></i></span></li> </a>
+                                            <a href="#"><li class="list-group-item">Satovi <span class="fa-icons"><i class="fas fa-plus"></i></span> </li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-6">
+                            <div class="forHerHim padd-tb-16">
+                                <span class="badge custom-badge">Top selekcija</span>
+                                <div class="heading">
+                                    <h1 class="heading-border-bottom">Za njega</h1>
+                                </div>
+                                <div class="row add-p-padd">
+                                    <div class="col-12 col-sm-12 col-md-5 padd-b-16">
+                                        <img src="uploads/forhim.jpg" alt="for her" class="img-fluid"/>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-7">
+                                        <p class="sub-txt padd-b-16">Najbolji pokloni za njega</p>
+                                        <ul class="list-group forHerHimListGroup add-padd">
+                                            <a href="pages/category.php"><li class="list-group-item">Poklon set <span class="fa-icons"><i class="fas fa-plus"></i></span></li> </a>
+                                            <a href="#"><li class="list-group-item">Parfemi <span class="fa-icons"><i class="fas fa-plus"></i></span></li> </a>
+                                            <a href="#"><li class="list-group-item">Satovi <span class="fa-icons"><i class="fas fa-plus"></i></span> </li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section - Other Details -->
+<section class="section-wrap section-unit">
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="heading">
+                <h1 class="heading-main-border">GiftShop - pravi izbor za vas </h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div class="unit-bg d-flex flex-column justify-content-center align-items-center">
+                        <div class="div-unit"><span class="fa-icons"><i class="fas fa-piggy-bank"></i></span> </div>
+                        <div class="div-unit"><p class="sub-txt text-uppercase font-weight-bold">Kvalitet i štednja</p></div>
+                        <div class="div-unit"><p class="sub-txt text-center product-description"> GiftShop poseduje širok asortiman kvalitetnih poklona po najpovoljnijim cenama.</p></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div class="unit-bg d-flex flex-column justify-content-center align-items-center">
+                        <div class="div-unit"><span class="fa-icons"><i class="fas fa-gifts"></i></span> </div>
+                        <div class="div-unit"><p class="sub-txt text-uppercase font-weight-bold">Isporuka</p></div>
+                        <div class="div-unit"><p class="sub-txt text-center product-description"> Za proizvode u vrednosti od preko 3000,00 DIN. GiftShop obezbeđuje besplatnu poštarinu.</p></div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div class="unit-bg d-flex flex-column justify-content-center align-items-center">
+                        <div class="div-unit"><span class="fa-icons"><i class="fas fa-percent"></i></span> </div>
+                        <div class="div-unit"><p class="sub-txt text-uppercase font-weight-bold">Akcija</p></div>
+                        <div class="div-unit"><p class="sub-txt text-center product-description"> Aktuelno! GiftShop svake nedelje priprema posebne popuste! Uskoro prijave za newsletter. </p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<div id="footer" class="footer bg-color">
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="footer-list">
+                            <ul>
+                                <li class="fa-icon-box d-flex">
+                                    <span class="fa-icons"><i class="fas fa-phone d-flex justify-content-center align-items-center"></i></span>
+                                    <div class="d-flex flex-column">
+                                        <p class="sub-txt text-uppercase font-weight-bold">Telefon</p>
+                                        <p class="sub-txt">+381 64 58 12 994</p>
+                                    </div>
+                                </li>
+                                <li class="fa-icon-box d-flex">
+                                    <span class="fa-icons"><i class="far fa-envelope d-flex justify-content-center align-items-center"></i></span>
+                                    <div class="d-flex flex-column">
+                                        <p class="sub-txt text-uppercase font-weight-bold">E-mail</p>
+                                        <p class="sub-txt">office@giftshop.com</p>
+                                    </div>
+                                </li>
+                                <li class="fa-icon-box d-flex">
+                                    <span class="fa-icons"><i class="fas fa-map-marker-alt d-flex justify-content-center align-items-center"></i></span>
+                                    <div class="d-flex flex-column">
+                                        <p class="sub-txt text-uppercase font-weight-bold">Adresa</p>
+                                        <p class="sub-txt">32000 Čačak</p>
+                                    </div>
+                                </li>
+                                <li class="fa-icon-box d-flex">
+                                    <span class="fa-icons"><i class="far fa-clock d-flex justify-content-center align-items-center"></i></span>
+                                    <div class="d-flex flex-column">
+                                        <p class="sub-txt text-uppercase font-weight-bold">Radno vreme</p>
+                                        <p class="sub-txt">00:00-24:00h</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="heading">
+                            <h1>Mapa sajta</h1>
+                        </div>
+                        <div class="footer-list">
+                            <ul>
+                                <li><a href="pages/index.html">Početna</a></li>
+                                <li><a href="pages/latest.html">Novo</a></li>
+                                <li><a href="pages/discount.html">Akcija</a></li>
+                                <li><a href="pages/blog.html">Blog</a></li>
+                                <li><a href="pages/about.html">O nama</a></li>
+                                <li><a href="pages/contact.html">Kontakt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="heading">
+                            <h1>Pokloni</h1>
+                        </div>
+                        <div class="footer-list">
+                            <ul>
+                                <li><a href="pages/category.html">Poklon set</a></li>
+                                <li><a href="#">Vina</a></li>
+                                <li><a href="#">Parfemi</a></li>
+                                <li><a href="#">Knjige</a></li>
+                                <li><a href="#">Cveće</a></li>
+                                <li><a href="#">Satovi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="heading">
+                            <h1>Blog</h1>
+                        </div>
+                        <div>
+                            <h3><a href="#" class="a-link"><span class="fa-icons"><i class="fas fa-caret-right"></i></span><span class="padd-l-8">Ne propustite akcijsku ponudu</span></a></h3>
+                        </div>
+                        <div class="padd-tb-8">
+                            <a href="#"><img src="uploads/blogimg.jpg" alt="gift blog image" class="img-fluid"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Bottom Bar -->
+<div id="bottomBar" class="bottom-bar bg-color">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="wrap  d-flex justify-content-md-start justify-content-sm-end justify-content-end">
+                    <p class="sub-txt"> Developed by <a href="https://www.linkedin.com/in/vesna-milovanovic" class="a-link">Vesna Milovanović</a></p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="wrap d-flex justify-content-md-center justify-content-end justify-content-sm-end">
+                    <p class="sub-txt"> &copy; Copyright 2020. GiftShop</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="wrap d-flex justify-content-end">
+                    <p class="sub-txt  padd-l-16">
+                        <a href="#"><span class="fa-icons padd-l-8"><i class="fab fa-facebook-f"></i></span></a>
+                        <a href="#"><span class="fa-icons padd-l-8"><i class="fab fa-twitter"></i></span></a>
+                        <a href="#"><span class="fa-icons padd-l-8"><i class="fab fa-instagram"></i></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
