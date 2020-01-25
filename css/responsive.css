@@ -1,0 +1,26 @@
+/* hide top bar elements on small and extra small screens */
+@media screen and (min-width: 0px) and (max-width: 830px) {
+    .hide-sm-xs {
+        display: none;
+    }
+    #search input[type="search"] {
+        font-size: 1.5rem !important;
+    }
+    form#sortby{
+        float: left;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 577px) {
+    div.forHerHim .custom-badge{
+        top: -1%;
+    }
+    #loginForm,
+    #registerForm {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 766px) and (max-width: 940px) {
+    div.card .custom-btn a{
+        font-size: 0.75rem;
+    }
+}
