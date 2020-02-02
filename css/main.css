@@ -97,6 +97,14 @@ div.heading h1 {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+button, button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="number"]:focus,
+select[name="sortby"]{
+    box-shadow: none!important;
+    outline: none!important;
+}
 /* Padding Fix */
 .padd-l-16{
     padding-left: 16px;
@@ -538,6 +546,12 @@ form#registerForm .form-group > input:focus
     color: white;
     min-width: 150px;
 }
+#cartForm div input{
+    margin-bottom: 3px;
+}
+.total-cart span{
+    margin-left: 5px;
+}
 #loginForm,
 #registerForm {
     width: 50%;
@@ -561,6 +575,17 @@ div.product-images-below img{
     height: 35px;
     padding: 3px;
     border: none;
+}
+/*Hide Input Number Arrows*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance:textfield;
 }
 /* JS related classes */
 .js-scroll-fixed {
