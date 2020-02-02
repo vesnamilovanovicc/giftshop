@@ -6,7 +6,7 @@ $(document).ready(function(){
         $('#search').addClass('js-open');
         $('#search > form > input[type="search"]').focus();
     });
-    // show search form on click
+    // close search form
     $('#search, #search button.close').on('click keyup', function(event) {
         if (event.target == this || event.target.className == 'js-close' || event.keyCode == 27) {
             $(this).removeClass('js-open');
