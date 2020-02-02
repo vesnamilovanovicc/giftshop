@@ -85,7 +85,7 @@ a, a:visited, a:active, a:hover {
 #loginForm a span{
     color: var(--main-color);
 }
-div.heading h1 {
+div.heading h1{
     font-size: 1.25rem;
     /*font-weight: bold;*/
     margin-top: 5px;
@@ -159,7 +159,7 @@ section.pg-title {
     color: white;
     text-transform: uppercase;
 }
-.custom-btn a, .custom-btn span.fa-icons {
+.custom-btn a, .custom-btn span.fa-icons, div.blog-view-more .custom-btn:hover {
     color: white;
 }
 .btn:hover {
@@ -586,6 +586,41 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
     -moz-appearance:textfield;
+}
+/* Blog */
+div.article-heading{
+    margin-bottom: 10px;
+}
+div.article-heading h3 a{
+    font-size: 1.25rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bolder;
+}
+div.article-heading p a{
+    font-size: 0.75rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+div.blog-card-animate{
+    background-color: #fff1f1;
+    min-height: 250px;
+    box-shadow: 0 2px 20px 2px rgba(0,0,0,0.1);
+    margin-bottom: 1.25rem;
+}
+div.blog-card-animate:hover{
+    box-shadow: 0 10px 20px 3px rgba(0,0,0,0.15);
+    transition: box-shadow 500ms ease-in-out, transform 500ms ease-in-out;
+    transform: scale(1.01);
+}
+div.blog-card-animate:hover div.article-heading h3 a{
+    color: var(--main-color);
+}
+div.blog-card-animate img{
+    min-height: 150px;
 }
 /* JS related classes */
 .js-scroll-fixed {
