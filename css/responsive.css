@@ -10,6 +10,11 @@
         float: left;
     }
 }
+@media screen and (min-width: 0px) and (max-width: 878px) {
+    .inner-article span.middle h1{
+        font-size: 1.25rem;
+    }
+}
 @media screen and (min-width: 0px) and (max-width: 577px) {
     div.forHerHim .custom-badge{
         top: -1%;
@@ -18,9 +23,18 @@
     #registerForm {
         width: 100%;
     }
+    .inner-article span.middle h1{
+        font-size: 0.85rem;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 397px) {
+    .inner-article span.middle h1{
+        font-size: 0.75rem;
+    }
 }
 @media screen and (min-width: 766px) and (max-width: 940px) {
     div.card .custom-btn a{
         font-size: 0.75rem;
     }
 }
+
