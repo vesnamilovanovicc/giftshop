@@ -665,6 +665,11 @@ article .article-content{
     border-bottom: 1px solid var(--border);
     animation: smoothScroll 1s forwards;
 }
+.js-errorForm{
+    color: red !important;
+    font-size: 0.75rem;
+}
+
 @keyframes smoothScroll {
     0% {
         transform: translateY(-40px);
