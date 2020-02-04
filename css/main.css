@@ -83,7 +83,7 @@ a, a:visited, a:active, a:hover {
     font-size: 0.85rem;
 }
 .fa-icons,
-#loginForm a span{
+#loginForm a span {
     color: var(--main-color);
 }
 div.heading h1{
@@ -160,7 +160,11 @@ section.pg-title {
     color: white;
     text-transform: uppercase;
 }
-.custom-btn a, .custom-btn span.fa-icons, div.blog-view-more .custom-btn:hover {
+.custom-btn a,
+.custom-btn span.fa-icons,
+div.blog-view-more .custom-btn:hover,
+div.my-account .custom-btn:hover
+{
     color: white;
 }
 .btn:hover {
@@ -654,6 +658,19 @@ article .article-intro{
 }
 article .article-content{
     line-height: 20px;
+}
+/* My account */
+.my-account a:hover{
+    color: var(--main-color);
+}
+.my-account span.acc-user{
+    font-weight: bold;
+}
+.my-account .my-acc-alert-border{
+    border-radius: 0;
+    border: none;
+    border-top: 3px solid var(--main-color);
+
 }
 /* JS related classes */
 .js-scroll-fixed {
