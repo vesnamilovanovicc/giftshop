@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gift Shop | Registracija </title>
+    <title>Gift Shop | Logovanje </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -96,7 +96,7 @@
                         <div class="col-12">
                             <div class="pg-title">
                                 <div class="wrap">
-                                    <h1 class="pg-title-heading">Registracija</h1>
+                                    <h1 class="pg-title-heading">Moj nalog</h1>
                                 </div>
                             </div>
                         </div>
@@ -112,33 +112,22 @@
         <div class="row">
             <div class="col-12">
                 <div class="wrap">
-
-                    <form id="registerForm" action="" method="">
-                        <div class="form-group padd-tb-8">
-                            <span class="form-lbl text-center sub-txt">Ime: (obavezno): </span>
-                            <input type="text" class="form-control mg-tb-5" id="register-customer-firstname" placeholder="Ime" name="firstname">
-                        </div>
-                        <div class="form-group padd-tb-8">
-                            <span class="form-lbl text-center sub-txt">Prezime: (obavezno): </span>
-                            <input type="text" class="form-control mg-tb-5" id="register-customer-lastname" placeholder="Prezime" name="lastname">
-                        </div>
+                    <form id="loginForm" action="" method="">
 
                         <div class="form-group padd-tb-8">
                             <span class="form-lbl text-center sub-txt">Vaša e-pošta (obavezno): </span>
-                            <input type="text" class="form-control mg-tb-5" id="register-customer-email" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control mg-tb-5" id="login-customer-email" placeholder="E-mail" name="login_email" value="">
                         </div>
                         <div class="form-group padd-tb-8">
                             <span class="form-lbl text-center sub-txt">Lozinka (obavezno): </span>
-                            <input type="password" class="form-control mg-tb-5" id="register-customer-password" placeholder="Lozinka" name="password">
-                        </div>
-                        <div class="form-group padd-t-b-8">
-                            <span class="form-lbl text-center sub-txt">Potvrdite lozinku (obavezno): </span>
-                            <input type="password" class="form-control mg-tb-5" id="register-customer-password-confirm" placeholder="Potvrdite lozinku" name="cPassword">
-                        </div>
+                            <input type="password" class="form-control mg-tb-5" id="login-customer-password" placeholder="Lozinka" name="login_password" value="">
+                        </div><br>
 
                         <div class="d-flex justify-content-center">
-                            <input type="submit" name="action" class="btn custom-btn" value="Registruj se">
-                        </div>
+                            <input type="submit" name="action" class="btn custom-btn" value="Uloguj se">
+                        </div><br><br>
+
+                        <a href="register.html">Nemaš nalog? <span>Registruj se</span></a>
                     </form>
                 </div>
             </div>
