@@ -23,7 +23,7 @@
             <div class="col-12 col-sm-6 col-md-8">
                 <div class="wrap d-flex justify-content-sm-end justify-content-center">
                     <p class="sub-txt  padd-l-16"><a href="wishlist.html"><span class="fa-icons"><i class="far fa-heart"></i></span><span class="hide-sm-xs">Lista želja</span></a></p>
-                    <p class="sub-txt  padd-l-16"><a href="my_account.html"><span class="fa-icons"><i class="far fa-user"></i></span><span class="hide-sm-xs">Moj nalog</span> </a></p>
+                    <p class="sub-txt  padd-l-16"><a href="login.html"><span class="fa-icons"><i class="far fa-user"></i></span><span class="hide-sm-xs">Moj nalog</span> </a></p>
                     <p class="sub-txt  padd-l-16"><a href="cart.html"><span class="fa-icons"><i class="fab fa-opencart"></i></span><span class="hide-sm-xs"> Moja korpa </span></a></p>
                     <p class="sub-txt  padd-l-16"><a href="#search"><span class="fa-icons"><i class="fas fa-search"></i></span><span class="hide-sm-xs">Pretraga </span></a></p>
                     <p class="sub-txt  padd-l-16">
@@ -107,31 +107,38 @@
     </div>
 </div>
 <!-- Main Content -->
-<section class="section-wrap">
+<section class="section-wrap account-section">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-sm-6 col-md-3">
                 <div class="wrap">
-                    <form id="loginForm" action="" method="">
+                    <!-- Aside Menu - My Account -->
+                    <ul class="list-group listHimHer">
+<!--                        <a href="my_account.html"><li class="list-group-item">Kontrolna tabla</li></a>-->
+                        <a href="cart.html"><li class="list-group-item">Moja korpa</li></a>
+                        <a href="acc_details.html"><li class="list-group-item">Moji podaci</li></a>
+                        <a href="wishlist.html"><li class="list-group-item">Moje želje</li></a>
+                        <a href="acc_orders.html"><li class="list-group-item">Moje kupovine</li></a>
+                        <a href="#"><li class="list-group-item">Odjava</li></a>
+                    </ul>
 
-                        <div class="form-group padd-tb-8">
-                            <span class="form-lbl text-center sub-txt">Vaša e-pošta (obavezno): </span>
-                            <input type="text" class="form-control mg-tb-5" id="login-customer-email" placeholder="E-mail" name="email" value="">
-                        </div>
-                        <div class="form-group padd-tb-8">
-                            <span class="form-lbl text-center sub-txt">Lozinka (obavezno): </span>
-                            <input type="password" class="form-control mg-tb-5" id="login-customer-password" placeholder="Lozinka" name="password" value="">
-                        </div><br>
-
-                        <div class="d-flex justify-content-center">
-                            <input type="submit" name="action" class="btn custom-btn" value="Uloguj se">
-                        </div><br><br>
-
-                        <a href="register.html">Nemaš nalog? <span>Registruj se</span></a>
-                    </form>
                 </div>
             </div>
+            <div class="col-12 col-sm-6 col-md-9">
+                <div class="wrap">
+                    <div class="my-account">
+                        <div class="alert alert-danger my-acc-alert-border">
+                            <p class="sub-txt">Vaša korpa je prazna.</p>
+                        </div>
+                        <div class="padd-tb-8">
+                            <div class="d-flex justify-content-center justify-content-md-start">
+                                <a href="wishlist.html"><button class="btn custom-btn"><span class="fa-icons padd-l-8"><i class="fas fa-arrow-left"></i></span>Nastavite kupovinu</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
     </div>
 </section>
