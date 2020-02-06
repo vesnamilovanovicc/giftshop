@@ -128,4 +128,20 @@ $(document).ready(function(){
 
     });
 
+    // update account (user) information / clint side input validation
+    $('#userForm').submit(function (e) {
+        e.preventDefault();
+        var user_first_name = $('#user-first-name').val();
+        var user_last_name = $('#user-last-name').val();
+        var user_address = $('#user-address').val();
+        var user_phone = $('#user-phone').val();
+        var user_email = $('#user-email').val();
+        var user_password = $('#user-password').val();
+        var user_new_password = $('#user-new-password').val();
+        var user_new_password_confirm = $('#user-new-password-confirm').val();
+        $('.js-errorForm').remove();
+
+
+    });
+
 });
