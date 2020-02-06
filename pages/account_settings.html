@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gift Shop | Moj nalog </title>
+    <title>Gift Shop | Podešavanja naloga  </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -114,7 +114,7 @@
                 <div class="wrap">
                     <!-- Aside Menu - My Account -->
                     <ul class="list-group listHimHer">
-<!--                        <a href="my_account.html"><li class="list-group-item">Kontrolna tabla</li></a>-->
+                        <!--                        <a href="my_account.html"><li class="list-group-item">Kontrolna tabla</li></a>-->
                         <a href="cart.html"><li class="list-group-item">Moja korpa</li></a>
                         <a href="account_settings.html"><li class="list-group-item">Moji podaci</li></a>
                         <a href="wishlist.html"><li class="list-group-item">Moje želje</li></a>
@@ -124,18 +124,58 @@
 
                 </div>
             </div>
+            <!-- Account Details -->
             <div class="col-12 col-sm-6 col-md-9">
                 <div class="wrap">
                     <div class="my-account">
                         <div class="alert alert-danger my-acc-alert-border">
-                            <p class="sub-txt">Vaša korpa je prazna.</p>
-                        </div>
-                        <div class="padd-tb-8">
-                            <div class="d-flex justify-content-center justify-content-md-start">
-                                <a href="wishlist.html"><button class="btn custom-btn"><span class="fa-icons padd-l-8"><i class="fas fa-arrow-left"></i></span>Nastavite kupovinu</button></a>
-                            </div>
+                            <p class="sub-txt">Uredite ili izmenite vaš nalog.</p>
                         </div>
                     </div>
+                    <form id="userForm" action="" method="">
+                        <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="form-group padd-tb-8">
+                                <span class="form-lbl text-center sub-txt">Ime: (obavezno)</span>
+                                <input type="text" class="form-control mg-tb-5" id="user-first-name" placeholder="Ime" name="user_first_name">
+                            </div>
+                            <div class="form-group padd-tb-8">
+                                <span class="form-lbl text-center sub-txt">Prezime: (obavezno)</span>
+                                <input type="text" class="form-control mg-tb-5" id="user-last-name" placeholder="Prezime" name="user_last_name">
+                            </div>
+                            <div class="form-group padd-tb-8">
+                                <span class="form-lbl text-center sub-txt">Adresa: (obavezno)</span>
+                                <input type="text" class="form-control mg-tb-5" id="user-address" placeholder="Adresa" name="user_address">
+                            </div>
+                            <div class="form-group padd-tb-8">
+                                <span class="form-lbl text-center sub-txt">Telefon: (obavezno)</span>
+                                <input type="text" class="form-control mg-tb-5" id="user-phone" placeholder="Telefon" name="user_phone">
+                            </div>
+                            <div class="form-group padd-tb-8">
+                                <span class="form-lbl text-center sub-txt">Vaša e-pošta: (obavezno)</span>
+                                <input type="text" class="form-control mg-tb-5" id="user-email" placeholder="E-mail" name="user_email">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="form-group padd-tb-8">
+                                <span class="form-lbl text-center sub-txt">Lozinka: (obavezno)</span>
+                                <input type="password" class="form-control mg-tb-5" id="user-password" placeholder="Lozinka" name="user_password">
+                            </div>
+                            <div class="form-group padd-tb-8">
+                                <span class="form-lbl text-center sub-txt">Nova lozinka: </span>
+                                <input type="password" class="form-control mg-tb-5" id="user-new-password" placeholder="Nova lozinka" name="user_new_password">
+                            </div>
+                            <div class="form-group padd-t-b-8">
+                                <span class="form-lbl text-center sub-txt">Potvrdite novu lozinku: </span>
+                                <input type="password" class="form-control mg-tb-5" id="user-new-password-confirm" placeholder="Potvrdite novu lozinku" name="user_new_password_confirm">
+                            </div>
+                            <div class="d-flex justify-content-md-end justify-content-start">
+                                <input type="submit" name="action" class="btn custom-btn" value="Sačuvaj izmene">
+                            </div>
+                        </div>
+                        </div>
+
+                    </form>
                 </div>
 
             </div>

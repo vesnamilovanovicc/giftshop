@@ -524,6 +524,7 @@ form#contactForm .form-group > input,
 form#contactForm .form-group textarea,
 form#loginForm .form-group > input,
 form#registerForm .form-group > input,
+form#userForm .form-group > input,
 #quantity
 {
     outline: none !important;
@@ -533,21 +534,24 @@ form#registerForm .form-group > input,
 }
 form#contactForm .form-group > input,
 form#loginForm .form-group > input,
-form#registerForm .form-group > input
+form#registerForm .form-group > input,
+form#userForm .form-group > input
 {
     height: 35px;
 }
 form#contactForm .form-group textarea:focus,
 form#contactForm .form-group > input:focus,
 form#loginForm .form-group > input:focus,
-form#registerForm .form-group > input:focus
+form#registerForm .form-group > input:focus,
+form#userForm .form-group > input:focus
 {
     border: 1px solid transparent;
 }
 #contactForm .custom-btn,
 #cartForm .custom-btn,
 #loginForm .custom-btn,
-#registerForm .custom-btn {
+#registerForm .custom-btn,
+#userForm .custom-btn{
     color: white;
     min-width: 150px;
 }
