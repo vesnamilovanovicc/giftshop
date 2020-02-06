@@ -3,6 +3,7 @@ $(document).ready(function(){
     // global variables
     var regExTxt = /^([A-Za-z]{0,})$/;
     var regExMail = /^([A-Za-z0-9])+\@([A-Za-z0-9])+\.([A-Za-z]{2,4})$/;
+    var regExNumber = /^[0-9]*$/;
 
     // contact form - basic client side validation
     $('#contactForm').submit(function (e) {
@@ -38,7 +39,7 @@ $(document).ready(function(){
         }
     });
 
-    // login form - basic slient side validation
+    // login form - basic client side validation
     $('#loginForm').submit(function (e) {
         e.preventDefault();
         var login_email = $('#login-customer-email').val();
@@ -140,6 +141,77 @@ $(document).ready(function(){
         var user_new_password = $('#user-new-password').val();
         var user_new_password_confirm = $('#user-new-password-confirm').val();
         $('.js-errorForm').remove();
+
+        if(user_first_name.length < 1){
+            $('#user-first-name').after('<span class="js-errorForm">Ovo polje je obavezno..</span>');
+        }
+        else{
+            var validateUserFirstName = regExTxt.test(user_first_name);
+            if(!validateUserFirstName){
+                $('#user-first-name').after('<span class="js-errorForm">Ovo polje je tekstualno.</span>');
+            }
+        }
+        if(user_last_name.length < 1){
+            $('#user-last-name').after('<span class="js-errorForm">Ovo polje je obavezno..</span>');
+        }
+        else{
+            var validateUserLastName = regExTxt.test(user_last_name);
+            if(!validateUserLastName){
+                $('#user-last-name').after('<span class="js-errorForm">Ovo polje je tekstualno.</span>');
+            }
+        }
+        if(user_address.length < 1){
+            $('#user-address').after('<span class="js-errorForm">Ovo polje je obavezno..</span>');
+        }
+        if(user_phone.length < 1){
+            $('#user-phone').after('<span class="js-errorForm">Ovo polje je obavezno..</span>');
+        }
+        else{
+            var validateUserPhoneNumber = regExNumber.test(user_phone);
+            if(!validateUserPhoneNumber){
+                $('#user-phone').after('<span class="js-errorForm">Samo brojevi.</span>');
+            }
+        }
+        if(user_email.length < 1){
+            $('#user-email').after('<span class="js-errorForm">Ovo polje je obavezno.</span>');
+        }
+        else{
+            var validateUserMail = regExMail.test(user_email);
+            if(!validateUserMail){
+                $('#user-email').after('<span class="js-errorForm">Unesite ispravan mejl.</span>');
+            }
+        }
+
+        if(user_password.length < 1) {
+            $('#user-password').after('<span class="js-errorForm">Ovo polje je obavezno..</span>');
+        }
+        else {
+            if (user_password.length < 8) {
+                $('#user-password').after('<span class="js-errorForm">Lozinka mora imati najmanje 8 karaktera.</span>');
+            }
+        }
+        // new password
+        if(user_new_password != "" && user_new_password.length < 8){
+            $('#user-new-password').after('<span class="js-errorForm">Lozinka mora imati najmanje 8 karaktera.</span>');
+
+        }
+
+        if(user_new_password != ""  && user_new_password_confirm.length < 1) {
+            $('#user-new-password-confirm').after('<span class="js-errorForm">Ovo polje je obavezno.</span>');
+        }
+        else {
+            if (user_new_password.length >= 8 && user_new_password_confirm.length < 8) {
+                $('#user-new-password-confirm').after('<span class="js-errorForm">Lozinka mora imati najmanje 8 karaktera.</span>');
+            }
+            else{
+                if(user_new_password != user_new_password_confirm){
+                    $('#user-new-password').after('<span class="js-errorForm">Lozinke se ne poklapaju.</span>');
+                    $('#user-new-password-confirm').after('<span class="js-errorForm">Lozinke se ne poklapaju.</span>');
+                }
+            }
+        }
+
+
 
 
     });
